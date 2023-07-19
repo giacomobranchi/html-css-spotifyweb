@@ -72,11 +72,12 @@ ul a {
 
 .row{
     gap: 1rem;
+    
 }
 
 .col{
-    width: calc(100% / 12 * 2 - 20px);
-    
+    width: calc(100% / 12 * 2 - 30px);
+    margin:0 8px;
     text-align: center;
 }
 
@@ -98,13 +99,13 @@ ul a {
     }
     
     .col{
-        width: calc(100% / 12 * 3 - 20px);
+        width: calc(100% / 12 * 3 - 30px);
     }  
 }
 
 @media screen and (max-width:768px){
     
     .col{
-        width: calc(100% / 12 * 6 - 20px);
+        width: calc(100% / 12 * 6 - 30px);
     }  
 }
