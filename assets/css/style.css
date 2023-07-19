@@ -75,7 +75,6 @@ ul a {
 }
 
 .col{
-    background-color: coral;
     width: calc(100% / 12 * 2 - 20px);
     
     text-align: center;
@@ -85,3 +84,27 @@ ul a {
     max-width: 100%;
 }
 
+
+
+
+
+
+
+
+
+@media screen and (max-width:1200px){
+    .row{
+        flex-wrap: wrap;
+    }
+    
+    .col{
+        width: calc(100% / 12 * 3 - 20px);
+    }  
+}
+
+@media screen and (max-width:768px){
+    
+    .col{
+        width: calc(100% / 12 * 6 - 20px);
+    }  
+}
