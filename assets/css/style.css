@@ -5,7 +5,26 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+:root{
+    --sp-dark: black;
+    --sp-call-to-a: #080b12;
+    --sp-main-bg: #141922;
+    --sp-light: #ffffff;
+    --sp-sec-bg: #282828;
+    --sp-secondary: #74767b;
+    --sp-medium: #a3a3a3;
+}  
+
 /* #region common */
+
+body{
+    background-color: var(--sp-main-bg);
+    color: white;
+}
+
+.wrapper{
+    height: 100vh;
+}
 
 .container{
     width: 100%;
@@ -29,7 +48,7 @@ a{
 /* #region .debug */
 
     .debug main{
-        height: 100vh;
+        /* height: 100vh; */
     }
 
     .debug .col{
@@ -37,36 +56,104 @@ a{
         border: 1px dotted black;
         aspect-ratio: 1/1;
     }
+
+    .debug header{
+        background-color: coral;
+    }
 /* #endregion .debug */
 
 /* #region .sidebar */
 
+
+
+/* .logo{
+    padding: 1rem 0;
+} */
+
+.logo svg{
+    width: 100%;
+}
+
 .sidebar{
+    height: calc(100vh - 80px);
     width: 230px;
-    background-color: #000000;
+    background-color: var(--sp-dark);
+    padding: 1.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.functions svg{
+    height: 1.2rem;
+}
+
+.functions{
+    vertical-align: middle;
+    line-height: 1.5;
+}
+
+.functions a{
+    display: block;
+    color: var(--sp-light);
+}
+
+.playlist{
+    font-size: 0.8rem;
+    padding-top: 1rem;
+    line-height: 2;
+    color: var(--sp-medium);
+}
+
+.download{
+    vertical-align: middle;
+    border-bottom:1px solid var(--sp-medium);
+    color: var(--sp-medium);
+    padding: 0.3rem 0;
+}
+
+.download svg{
+    height: 1.2rem;
+}
+
+.profile{
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.profile svg{
+    height: 2rem;
+    background-color: var(--sp-medium);
+    border-radius: 50%;
+    aspect-ratio: 1/1;
 }
 
 /* #endregion .sidebar  */
 
 /* #region .site_body */
 
+header{
+    height: 50px;
+}
+
 .site_body{
-    background-color: #141922;
     width: 100%;
-    height: calc(100vh - 100px);
+    height: 100%;
     color: white;
     overflow-y: scroll;
+    height: calc(100vh - 50px - 80px);
 }
 
 .site_body ul{
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 24px;
+    flex-wrap: wrap;
+         
 }
 
 ul a {
-    color: #76787d;
+    color: var(--sp-secondary);
     font-weight: bold;
 }
 
@@ -85,7 +172,14 @@ ul a {
     max-width: 100%;
 }
 
+/*  */
 
+/*  */
+
+footer{
+    height: 80px;
+    background-color: var(--sp-sec-bg);
+}
 
 
 
@@ -108,4 +202,10 @@ ul a {
     .col{
         width: calc(100% / 12 * 6 - 30px);
     }  
+}
+
+@media screen  and (max-width:475px){
+    .sidebar{
+        width: 50px;
+    }
 }
