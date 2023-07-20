@@ -57,21 +57,19 @@ a{
         aspect-ratio: 1/1;
     }
 
-    .debug header{
+    /* .debug header{
         background-color: coral;
-    }
+    } */
 /* #endregion .debug */
 
 /* #region .sidebar */
 
-
-
-/* .logo{
-    padding: 1rem 0;
-} */
-
 .logo svg{
     width: 100%;
+}
+
+.sm-logo{
+    display: none;
 }
 
 .sidebar{
@@ -81,6 +79,10 @@ a{
     padding: 1.5rem;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.sidebar_top{
+    line-height: 3rem;
 }
 
 .functions svg{
@@ -95,6 +97,7 @@ a{
 .functions a{
     display: block;
     color: var(--sp-light);
+    margin: 22px 0;
 }
 
 .playlist{
@@ -102,6 +105,11 @@ a{
     padding-top: 1rem;
     line-height: 2;
     color: var(--sp-medium);
+}
+
+.your_playlist{
+    max-height: 140px;
+    overflow-y: scroll;
 }
 
 .download{
@@ -125,6 +133,7 @@ a{
     background-color: var(--sp-medium);
     border-radius: 50%;
     aspect-ratio: 1/1;
+    margin: 0 1rem;
 }
 
 /* #endregion .sidebar  */
@@ -133,6 +142,18 @@ a{
 
 header{
     height: 50px;
+    text-align: end;
+    padding: 0 1rem;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--sp-call-to-a);
+}
+
+.btn{
+    border: solid 1px var(--sp-light);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    
 }
 
 .site_body{
@@ -207,5 +228,50 @@ footer{
 @media screen  and (max-width:475px){
     .sidebar{
         width: 50px;
+        padding: 0.5rem 0.8rem;
+    }
+     
+    .lg-logo{
+        display: none;
+    }
+
+    .sm-logo{
+        display: block;
+    }
+
+    .functions span{
+        display: none;
+    }
+
+    .functions svg{
+        width: 100%;
+        height: unset;
+    }
+
+    .functions a{
+        margin: 6px 0;
+    }
+
+    .playlist{
+        display: none;
+    }
+
+    .download{
+        border: unset;
+    }
+
+    .download div, .profile div{
+        display: none;
+    }
+
+    .download svg{
+        width: 100%;
+        height: unset;
+    }
+
+    .profile svg{
+        width: 100%;
+        height: unset;
+        margin: unset;
     }
 }
