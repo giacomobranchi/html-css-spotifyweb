@@ -78,7 +78,7 @@ a{
 
 .sidebar{
     height: calc(100vh - 80px);
-    width: 230px;
+    width: 257px;
     background-color: var(--sp-dark);
     padding: 1.5rem;
     flex-direction: column;
@@ -241,7 +241,7 @@ footer{
 
 .control_icons{
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     margin:1rem auto;
     font-size: 1.2rem;
     align-items: center;
@@ -269,13 +269,16 @@ footer{
 .player_volume{
     gap: 1rem;
     justify-content: space-between;
+    width: 200px;
+    height: 100%;
+    align-items: center;
 }
 
 .volume{
     height: 5px;
     border-radius: 8px;
     max-width: 100px;
-    width: 100px;
+    width: 100%;
     margin: 0.3rem 1rem;
     background-color: var(--sp-secondary);
 }
@@ -294,7 +297,15 @@ footer{
     
     .col{
         width: calc(100% / 12 * 6 - 30px);
-    }  
+    }
+    
+    .player_song{
+        width: 30%;
+    }
+
+    .player_volume{
+        width: 30%;
+    }
 }
 
 @media screen  and (max-width:475px){
