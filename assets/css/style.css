@@ -166,6 +166,16 @@ header{
     color: white;
     overflow-y: scroll;
     height: calc(100vh - 50px - 80px);
+    padding: 1rem;
+}
+
+.site_body h2, .site_body h3{
+    padding: 1rem 0;
+}
+
+.subtitle{
+    padding-bottom: 2rem;
+    color: var(--sp-secondary);
 }
 
 .site_body ul{
@@ -190,13 +200,40 @@ ul a {
 .col{
     width: calc(100% / 12 * 2 - 30px);
     margin:0 8px;
+    
     text-align: center;
+}
+
+.relative{
+    position: relative;
 }
 
 .col img{
     max-width: 100%;
 }
 
+.col i{
+    
+    position: absolute;
+    font-size: 3rem;
+    top: 50%;
+    left: 50%;
+    aspect-ratio: 1;
+    display: none;
+    transform: translate(-50%, -50%);
+}
+
+.col:hover i{
+    display: block;
+}
+
+.col:hover img{
+    filter: opacity(50%);
+}
+
+.popular img{
+    border-radius: 50%;
+}
 /*  */
 
 /*  */
