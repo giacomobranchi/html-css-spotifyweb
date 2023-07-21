@@ -96,11 +96,16 @@ a{
 .functions{
     vertical-align: middle;
     line-height: 1.5;
+    
+}
+
+.highlight{
+    border-left:1px solid #adff2f;
 }
 
 .functions a{
     display: block;
-    color: var(--sp-light);
+    color: var(--sp-secondary);
     margin: 22px 0;
 }
 
@@ -160,6 +165,11 @@ header{
     
 }
 
+.btn:hover{
+    padding: 0.7rem 1.2rem;
+    border-radius: 1.5rem;
+}
+
 .site_body{
     width: 100%;
     height: 100%;
@@ -185,6 +195,10 @@ header{
     gap: 24px;
     flex-wrap: wrap;
          
+}
+
+a:hover{
+    color: var(--sp-light);
 }
 
 ul a {
